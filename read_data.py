@@ -1,5 +1,6 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import normalize
 
 def read_data(filename="cleveland.data"):
     to_int = np.vectorize(float)
@@ -25,6 +26,8 @@ def filter_data(filename="cleveland.data"):
     X = X[selections, :]
 
     # add more attributes
+
+    X = normalize(X, axis=0)
 
     return X, y
 
