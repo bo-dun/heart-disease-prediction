@@ -35,6 +35,6 @@ def filter_data(filename="cleveland.data"):
 def split_data():
     X, y = filter_data()
     X_train, X_test, y_train, y_test = train_test_split(
-        X.T, y.T, test_size=0.2
+        X.T, y.T, test_size=0.2, stratify=y.T
     )
     return X_train.T, X_test.T, y_train.T, y_test.T
