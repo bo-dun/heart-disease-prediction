@@ -1,6 +1,9 @@
 import sklearn.ensemble
+from sklearn.model_selection import GridSearchCV
 from read_data import *
 import numpy as np
+
+# STRATIFY BY DIABETES
 
 X_train, X_test, Y_train, Y_test = split_data()
 
