@@ -3,7 +3,7 @@ from sklearn.model_selection import GridSearchCV
 from read_data import *
 import numpy as np
 
-# STRATIFY BY DIABETES
+# STRATIFY BY DIABETICS
 
 X_train, X_test, Y_train, Y_test = split_data()
 
