@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import sklearn.model_selection as sk
 
 fheader = "headernames.data"
 fdata = [
@@ -11,8 +12,6 @@ fdata = [
 
 with open(fheader, 'r', encoding='ascii') as f:
     headers = [word for line in f for word in line.split()]
-
-len(headers)
 
 data_processed = []
 
@@ -30,11 +29,12 @@ data_processed = np.vstack(data_processed)
 
 frame = pd.DataFrame.from_records(data_processed, columns=np.array(['dataset'] + headers))
 
-age_series = frame['age']
-sex_series = frame['sex']
 # Added in two features, one corresponding to sex and one to age.
 # Both are aggregate features corresponding to percentage frequency
 # of coronary heart disease
+age_series = frame['age']
+sex_series = frame['sex']
+
 sex_feature = [(7.2 if x == "1" else 4.3) for x in sex_series]
 age_feature = []
 for age in age_series:
@@ -87,25 +87,29 @@ for k in frame.keys():
     if frame[k].isin([-9])[0]:
         frame[k + '_invalid'] = frame[k].map(lambda x: 1 if x == -9 else 0)
 
-#frame.to_csv('./229_processed_cleveland_full.data')
-#Y.to_csv('./229_processed_cleveland_Y_full.data')
+X = pd.DataFrame.as_matrix(frame)
 
-N = len(Y)
-print(frame.shape)
-print(pd.DataFrame.as_matrix(frame).shape)
-print(pd.DataFrame.as_matrix(Y))
+x_train_dev, x_test, y_train_dev, y_test = sk.train_test_split(X, Y, test_size = 0.2, random_state = 0, stratify=Y)
+kf = sk.KFold(n_splits=5, random_state = 0, shuffle=True)
 
-test_i = np.random.permutation(np.arange(N))[0:(N//6)]
-train_i = np.random.permutation(np.arange(N))[(N//6):]
+x_train_set = []
+y_train_set = []
+x_dev_set = []
+y_dev_set = []
+for train_index, dev_index in kf.split(x_train_dev):
+    x_train_set.append(x_train_dev[train_index])
+    y_train_set.append(y_train_dev[train_index])
+    x_dev_set.append(x_train_dev[dev_index])
+    y_dev_set.append(y_train_dev[dev_index])
 
-test_frame = frame[frame.index.isin(test_i)]
-train_frame = frame[frame.index.isin(train_i)]
+# 5 SETS OF K-FOLD SPLIT TRAINING DATA AND LABELS
+x_train_set
+y_train_set
 
-Y_test_frame = Y[frame.index.isin(test_i)]
-Y_train_frame = Y[frame.index.isin(train_i)]
+# 5 CORRESPONDING SETS OF DEV DATA AND LABELS
+x_dev_set
+y_dev_set
 
-#test_frame.to_csv('./new_cleveland_test_X.data')
-#train_frame.to_csv('./new_cleveland_train_X.data')
-
-#Y_test_frame.to_csv('./new_cleveland_test_Y.data')
-#Y_train_frame.to_csv('./new_cleveland_train_Y.data')
+# TESTING DATA AND LABELS
+x_test
+y_test
