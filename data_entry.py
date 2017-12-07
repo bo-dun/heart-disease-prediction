@@ -30,7 +30,28 @@ for d in data_processed:
 data_processed = np.vstack(data_processed)
 
 frame = pd.DataFrame.from_records(data_processed, columns=np.array(['dataset'] + headers))
-frame
+
+age_series = frame['age']
+sex_series = frame['sex']
+# Added in two features, one corresponding to sex and one to age.
+# Both are aggregate features corresponding to percentage frequency
+# of coronary heart disease
+sex_feature = [(7.2 if x == "1" else 4.3) for x in sex_series]
+age_feature = []
+for age in age_series:
+    num = int(age)
+    if (num < 18):
+        age_feature.append(0)
+    elif (num < 45):
+        age_feature.append(0.8)
+    elif (num < 65):
+        age_feature.append(6.1)
+    elif (num < 75):
+        age_feature.append(16.4)
+    else:
+        age_feature.append(23.3)
+frame['age_feature'] = age_feature
+frame['sex_feature'] = sex_feature
 
 # delete names
 del frame['name']
