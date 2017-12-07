@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 fheader = "headernames.data"
 fdata = [
@@ -12,8 +13,6 @@ with open(fheader, 'r', encoding='ascii') as f:
     headers = [word for line in f for word in line.split()]
 
 len(headers)
-
-import pandas as pd
 
 data_processed = []
 
@@ -58,8 +57,9 @@ del frame['name']
 
 # convert to numbers
 frame = frame.applymap(float)
-# responses
-Y = frame['num'].map(lambda x: 1 if x != 0 else 0)
+
+# KEEP THE FOUR LABEL CATEGORIES
+# Y = frame['num'].map(lambda x: 1 if x != 0 else 0)
 
 # delete "garbage columns" that only have one value for the healthy
 # as they probably just describe the response
@@ -91,6 +91,9 @@ frame.to_csv('./229_processed_cleveland_full.data')
 Y.to_csv('./229_processed_cleveland_Y_full.data')
 
 N = len(Y)
+#print(frame)
+print(Y)
+
 test_i = np.random.permutation(np.arange(N))[0:(N//6)]
 train_i = np.random.permutation(np.arange(N))[(N//6):]
 
