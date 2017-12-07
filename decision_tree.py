@@ -1,10 +1,11 @@
 import sklearn.ensemble
 from sklearn.model_selection import GridSearchCV
 from read_data import *
+from data_entry import *
 import numpy as np
 
 # STRATIFY BY DIABETICS
-
+print(test_frame)
 X_train, X_test, Y_train, Y_test = split_data()
 
 randomForest = sklearn.ensemble.RandomForestClassifier(random_state=0)
