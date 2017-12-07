@@ -59,7 +59,7 @@ del frame['name']
 frame = frame.applymap(float)
 
 # KEEP THE FOUR LABEL CATEGORIES
-# Y = frame['num'].map(lambda x: 1 if x != 0 else 0)
+Y = frame['num'] #.map(lambda x: 1 if x != 0 else 0)
 
 # delete "garbage columns" that only have one value for the healthy
 # as they probably just describe the response
@@ -87,12 +87,13 @@ for k in frame.keys():
     if frame[k].isin([-9])[0]:
         frame[k + '_invalid'] = frame[k].map(lambda x: 1 if x == -9 else 0)
 
-frame.to_csv('./229_processed_cleveland_full.data')
-Y.to_csv('./229_processed_cleveland_Y_full.data')
+#frame.to_csv('./229_processed_cleveland_full.data')
+#Y.to_csv('./229_processed_cleveland_Y_full.data')
 
 N = len(Y)
-#print(frame)
-print(Y)
+print(frame.shape)
+print(pd.DataFrame.as_matrix(frame).shape)
+print(pd.DataFrame.as_matrix(Y))
 
 test_i = np.random.permutation(np.arange(N))[0:(N//6)]
 train_i = np.random.permutation(np.arange(N))[(N//6):]
@@ -103,8 +104,8 @@ train_frame = frame[frame.index.isin(train_i)]
 Y_test_frame = Y[frame.index.isin(test_i)]
 Y_train_frame = Y[frame.index.isin(train_i)]
 
-test_frame.to_csv('./new_cleveland_test_X.data')
-train_frame.to_csv('./new_cleveland_train_X.data')
+#test_frame.to_csv('./new_cleveland_test_X.data')
+#train_frame.to_csv('./new_cleveland_train_X.data')
 
-Y_test_frame.to_csv('./new_cleveland_test_Y.data')
-Y_train_frame.to_csv('./new_cleveland_train_Y.data')
+#Y_test_frame.to_csv('./new_cleveland_test_Y.data')
+#Y_train_frame.to_csv('./new_cleveland_train_Y.data')
