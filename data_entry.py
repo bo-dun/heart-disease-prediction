@@ -91,6 +91,10 @@ X = pd.DataFrame.as_matrix(frame)
 
 x_train_dev, x_test, y_train_dev, y_test = sk.train_test_split(X, Y, test_size = 0.2, random_state = 0, stratify=Y)
 kf = sk.KFold(n_splits=5, random_state = 0, shuffle=True)
+y_train_dev = np.asarray(y_train_dev)
+x_train_dev = np.asarray(x_train_dev)
+y_test = np.asarray(y_test)
+x_test = np.asarray(x_test)
 
 x_train_set = []
 y_train_set = []

@@ -1,12 +1,11 @@
 import sklearn.ensemble
 from sklearn.model_selection import GridSearchCV
-from read_data import *
 from data_entry import *
 import numpy as np
 
 # STRATIFY BY DIABETICS
-print(test_frame)
-X_train, X_test, Y_train, Y_test = split_data()
+# print(test_frame)
+# X_train, X_test, Y_train, Y_test = split_data()
 
 randomForest = sklearn.ensemble.RandomForestClassifier(random_state=0)
 # Performed iterative linear search for optimal hyperparameters
@@ -18,14 +17,13 @@ parameters = {
     'max_features': ['sqrt']
 }
 clf = GridSearchCV(randomForest, parameters)
-clf.fit(np.transpose(X_train), Y_train.ravel())
+print(np.asarray(y_train_set[0]))
+clf.fit(x_train_set[0], y_train_set[0])
 counter = 0
 total = 0
 
-X_test = np.transpose(X_test)
-Y_test = Y_test.ravel()
-prediction1 = clf.predict(X_test)
-answer = Y_test
+prediction1 = clf.predict(x_dev_set[0])#X_test.T)
+answer = y_dev_test[0].ravel()#Y_test.ravel()
 for i in range(len(prediction1)):
     total = total + 1
     if (answer[i] == prediction1[i]):
@@ -47,10 +45,10 @@ parameters = {
     'max_features': ['sqrt']#'auto', 'sqrt', 'log2', None]
 }
 gbc = GridSearchCV(gradientTree, parameters)
-gbc.fit(np.transpose(X_train), Y_train.ravel())
+gbc.fit(x_train_set[0], y_train_set[0].ravel())#X_train.T, Y_train.ravel())
 counter = 0
 total = 0
-prediction2 = gbc.predict(X_test)
+prediction2 = gbc.predict(x_dev_set[0])
 for i in range(len(prediction2)):
     total = total + 1
     if (answer[i] == prediction2[i]):
