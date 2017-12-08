@@ -90,7 +90,7 @@ for k in frame.keys():
 X = pd.DataFrame.as_matrix(frame)
 
 x_train_dev, x_test, y_train_dev, y_test = sk.train_test_split(X, Y, test_size = 0.2, random_state = 0, stratify=Y)
-kf = sk.KFold(n_splits=5, random_state = 0, shuffle=True)
+kf = sk.StratifiedKFold(n_splits=5, random_state = 0, shuffle=True)
 y_train_dev = np.asarray(y_train_dev)
 x_train_dev = np.asarray(x_train_dev)
 y_test = np.asarray(y_test)
@@ -100,7 +100,7 @@ x_train_set = []
 y_train_set = []
 x_dev_set = []
 y_dev_set = []
-for train_index, dev_index in kf.split(x_train_dev):
+for train_index, dev_index in kf.split(x_train_dev, y_train_dev):
     x_train_set.append(x_train_dev[train_index])
     y_train_set.append(y_train_dev[train_index])
     x_dev_set.append(x_train_dev[dev_index])
