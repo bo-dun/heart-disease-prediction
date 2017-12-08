@@ -117,3 +117,6 @@ y_dev_set
 # TESTING DATA AND LABELS
 x_test
 y_test
+
+# Feature Names
+keys = np.asarray(frame.keys())
