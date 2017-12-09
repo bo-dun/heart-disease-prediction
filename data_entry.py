@@ -122,7 +122,7 @@ for k in frame.keys():
         ser = frame[k][frame[k] != -9]
         mean = 0
         if ser.shape[0] != 0:
-            mean = ser.mean
+            mean = ser.mean()
         frame[k] = frame[k].map(lambda x: mean if x == -9 else 0)
         
 X = pd.DataFrame.as_matrix(frame)
