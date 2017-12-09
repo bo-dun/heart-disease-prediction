@@ -33,7 +33,9 @@ for i in range(1,2):
             if (answer[j] == prediction1[j]):
                 counter = counter + 1
         set_total = set_total + counter
-        print(np.sort(clf.feature_importances_))
+        
+        important = clf.feature_importances_.argsort()[-55:][::-1]
+        print(keys[important])
     if (set_total > max_total):
         max_i = i
         max_total = set_total
