@@ -36,6 +36,7 @@ for i in range(1,2):
         
         important = clf.feature_importances_.argsort()[-55:][::-1]
         print(keys[important])
+        print(clf.feature_importances_[important])
     if (set_total > max_total):
         max_i = i
         max_total = set_total

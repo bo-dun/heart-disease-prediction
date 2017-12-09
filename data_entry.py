@@ -59,7 +59,7 @@ del frame['name']
 frame = frame.applymap(float)
 
 # KEEP THE FOUR LABEL CATEGORIES
-Y = frame['num'] #.map(lambda x: 1 if x != 0 else 0)
+Y = frame['num'].map(lambda x: 1 if x != 0 else 0)
 
 # delete "garbage columns" that only have one value for the healthy
 # as they probably just describe the response
