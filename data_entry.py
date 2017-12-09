@@ -75,7 +75,7 @@ data_processed = np.vstack(data_processed)
 frame = pd.DataFrame.from_records(data_processed, columns=np.array(['dataset'] + headers))
 
 # DON'T KEEP THE FOUR LABEL CATEGORIES
-Y = frame['num'].map(lambda x: 1 if x != 0 else 0)
+Y = frame['num'].map(lambda x: 1 if float(x) != 0 else 0)
 
 frame = frame[good_features]
 # Added in two features, one corresponding to sex and one to age.
