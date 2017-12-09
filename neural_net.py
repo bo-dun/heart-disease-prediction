@@ -1,37 +1,23 @@
-from read_data import *
-from keras.models import Sequential
+from data_entry import *
+from keras.models import Model, Input
 from keras.layers import Dense
 
-X_train, X_test, y_train, y_test = split_data()
+for i in range(len(y_train_set)):
+    np.expand_dims(y_train_set[i], axis=1)
 
-model = Sequential()
+inputs = Input((x_train_set[0].shape[1], ))
+X = Dense(units=64,
+          kernel_initializer='glorot_uniform',
+          bias_initializer='zeros',
+          activation='relu')(inputs)
+X = Dense(units=1,
+          kernel_initializer='glorot_uniform',
+          bias_initializer='zeros',
+          activation='sigmoid')(X)
 
-model.add(Dense(units=64,
-                kernel_initializer='glorot_uniform',
-                bias_initializer='zeros',
-                activation='relu',
-                input_dim=X_train.shape[0]))
-model.add(Dense(units=32,
-                kernel_initializer='glorot_uniform',
-                bias_initializer='zeros',
-                activation='relu'))
-model.add(Dense(units=16,
-                kernel_initializer='glorot_uniform',
-                bias_initializer='zeros',
-                activation='relu'))
-model.add(Dense(units=1,
-                kernel_initializer='glorot_uniform',
-                bias_initializer='zeros',
-                activation='sigmoid'))
-
+model = Model(inputs=inputs, outputs=X)
 model.compile(optimizer='adam',
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-model.fit(X_train.T, y_train.T, epochs=1000)
-
-training_score = model.evaluate(X_train.T, y_train.T)
-print(training_score)
-
-testing_score = model.evaluate(X_test.T, y_test.T)
-print(testing_score)
+model.fit(x_train_set[0], y_train_set[0], epochs=10000, batch_size=32)
