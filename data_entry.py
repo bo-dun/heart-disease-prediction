@@ -116,10 +116,15 @@ for factor in factors:
 
 # impute -9 values
 problematic_cols = [k for k in frame.keys() if any(frame[k] == -9)]
+
 for k in frame.keys():
     if frame[k].isin([-9])[0]:
-        frame[k] = frame[k].map(lambda x: frame[k].mean() if x == -9 else 0)
-
+        ser = frame[k][frame[k] != -9]
+        mean = 0
+        if ser.shape[0] != 0:
+            mean = ser.mean
+        frame[k] = frame[k].map(lambda x: mean if x == -9 else 0)
+        
 X = pd.DataFrame.as_matrix(frame)
 
 x_train_dev, x_test, y_train_dev, y_test = sk.train_test_split(X, Y, test_size = 0.2, random_state = 0, stratify=Y)
