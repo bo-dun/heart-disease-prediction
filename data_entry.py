@@ -9,6 +9,51 @@ fdata = [
          "long-beach-va.data",
          "switzerland.data",
         ]
+good_features = [
+  "age",
+  "sex",
+  "painloc",
+  "painexer",
+  "relrest",
+  "pncaden",
+  "cp",
+  "trestbps",
+  "htn",
+  "chol",
+  "smoke",
+  "cigs",
+  "years",
+  "fbs",
+  "dm",
+  "famhist",
+  "restecg",
+  "dig",
+  "prop",
+  "nitr",
+  "pro",
+  "diuretic",
+  "proto",
+  "thaldur",
+  "thaltime",
+  "met",
+  "thalach",
+  "thalrest",
+  "tpeakbps",
+  "tpeakbpd",
+  "dummy",
+  "trestbpd",
+  "exang",
+  "xhypo",
+  "oldpeak",
+  "slope",
+  "rldv5",
+  "rldv5e",
+  "restef",
+  "restwm",
+  "exeref",
+  "exerwm",
+  "thal"
+]
 
 with open(fheader, 'r', encoding='ascii') as f:
     headers = [word for line in f for word in line.split()]
@@ -29,6 +74,10 @@ data_processed = np.vstack(data_processed)
 
 frame = pd.DataFrame.from_records(data_processed, columns=np.array(['dataset'] + headers))
 
+# DON'T KEEP THE FOUR LABEL CATEGORIES
+Y = frame['num'].map(lambda x: 1 if x != 0 else 0)
+
+frame = frame[good_features]
 # Added in two features, one corresponding to sex and one to age.
 # Both are aggregate features corresponding to percentage frequency
 # of coronary heart disease
@@ -52,22 +101,8 @@ for age in age_series:
 frame['age_feature'] = age_feature
 frame['sex_feature'] = sex_feature
 
-# delete names
-del frame['name']
-
 # convert to numbers
 frame = frame.applymap(float)
-
-# KEEP THE FOUR LABEL CATEGORIES
-Y = frame['num'].map(lambda x: 1 if x != 0 else 0)
-
-# delete "garbage columns" that only have one value for the healthy
-# as they probably just describe the response
-
-for k in frame.keys():
-    if frame[k][Y == 0].nunique() == 1:
-        print('deleted ' + k)
-        del frame[k]
 
 # break down categorical variables
 flatten = lambda x: 1 if x else 0
@@ -79,13 +114,11 @@ for factor in factors:
             frame[factor + str(int(value))] = (frame[factor] == value).map(flatten)
         del frame[factor]
 
-# create new column to indicate whether a variable is -9
-
+# impute -9 values
 problematic_cols = [k for k in frame.keys() if any(frame[k] == -9)]
-
 for k in frame.keys():
     if frame[k].isin([-9])[0]:
-        frame[k + '_invalid'] = frame[k].map(lambda x: 1 if x == -9 else 0)
+        frame[k] = frame[k].map(lambda x: frame[k].mean() if x == -9 else 0)
 
 X = pd.DataFrame.as_matrix(frame)
 
@@ -120,3 +153,5 @@ y_test
 
 # Feature Names
 keys = np.asarray(frame.keys())
+
+print("Features:", frame.keys())
