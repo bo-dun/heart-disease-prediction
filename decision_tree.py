@@ -10,11 +10,12 @@ import numpy as np
 kNum = len(x_dev_set)
 max_total = 0
 max_i = -1
-for i in range(1,2):
+feature_importances = 0
+for i in ['entropy']:
     print(i)
     set_total = 0
     for set_num in range(kNum):
-        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=75, criterion='entropy', max_depth=11, min_samples_leaf=1)
+        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=43, criterion='entropy', max_depth=4, min_samples_leaf=10)
 # Performed iterative linear search for optimal hyperparameters
 #parameters = {
 #    'n_estimators': [50],#[94],
@@ -34,14 +35,14 @@ for i in range(1,2):
                 counter = counter + 1
         set_total = set_total + counter
         
-        important = clf.feature_importances_.argsort()[-55:][::-1]
-        print(keys[important])
-        print(clf.feature_importances_[important])
+        feature_importances = feature_importances + clf.feature_importances_
+        #important = clf.feature_importances_.argsort()[-55:][::-1]
+        #print(keys[important])
+        #print(clf.feature_importances_[important])
     if (set_total > max_total):
         max_i = i
         max_total = set_total
         
-
 total = len(x_dev_set[0])
 accuracy = max_total / kNum
 print("RANDOM FOREST STATS")
@@ -49,8 +50,23 @@ print('Best Estimator: ' + str(max_i))
 print('Average Predicted Correctly: ' + str(accuracy))
 print('Total: ' + str(total))
 print('Accuracy: ' + str(accuracy/total))
-#print("Best Params: {}".format(clf.best_params_))
+important = feature_importances.argsort()[-55:][::-1]
+print(keys[important])
+print(feature_importances)
 
+clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=43, criterion='entropy', max_depth=4, min_samples_leaf=10)
+clf.fit(X, Y)
+total = 0
+counter = 0
+prediction1 = clf.predict(x_test)
+for j in range(len(prediction1)):
+    total = total + 1
+    if (y_test[j] == prediction1[j]):
+        counter = counter + 1
+print('Accuracy: ' + str(counter/total))
+important = clf.feature_importances_.argsort()[-55:][::-1]
+print(keys[important])
+print(clf.feature_importances_[important])
 
 
 
