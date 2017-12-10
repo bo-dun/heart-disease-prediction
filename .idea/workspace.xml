@@ -2,214 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c80408a-e443-47f7-82c3-3b6ea19ddef7" name="Default" comment="added functionality for misc parsing">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858800.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858821.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858842.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858864.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858886.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858941.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858963.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512858986.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859008.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859032.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859909.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859944.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859945.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859947.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859949.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512859950.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860106.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860108.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860110.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860112.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860114.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860210.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860212.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860213.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860215.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860217.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860252.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860254.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860255.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860256.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860258.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860289.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860291.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860292.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860294.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860296.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860483.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860485.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860486.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860488.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860489.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860550.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860552.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860553.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860554.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860557.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860678.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860679.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860681.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860682.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860684.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860747.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860748.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860749.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860751.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860752.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860887.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860889.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860890.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860892.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512860894.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861156.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861158.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861160.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861161.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861163.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861240.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861241.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861243.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861245.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861247.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861288.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861289.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861291.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861292.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861293.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861394.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861395.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861397.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861399.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861401.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861532.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861533.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861534.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861536.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861537.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861703.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861705.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861706.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861707.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861708.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861739.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861741.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861742.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861743.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861765.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861767.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861768.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861771.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512861773.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862005.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862006.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862007.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862010.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862011.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862050.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862052.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862054.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862056.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862058.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862171.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862172.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862174.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862175.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862177.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862221.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862222.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862223.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862226.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862227.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862267.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862269.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862271.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862273.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862276.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862321.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862327.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862333.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862340.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862347.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862400.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862403.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862407.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862411.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862415.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862458.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862468.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862480.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862491.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862502.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862556.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862561.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862571.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862578.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862586.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862667.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862669.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862675.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862679.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862685.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862723.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862727.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862731.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862736.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862738.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512862991.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863001.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863011.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863021.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863030.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863063.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863067.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863071.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863075.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863079.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863156.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863185.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863213.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863242.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863272.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863535.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863585.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863630.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863682.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863703.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863715.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863741.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863756.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863873.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863883.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863891.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863896.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863933.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863940.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863945.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863952.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512863963.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864002.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864026.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864034.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864042.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864053.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864060.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864087.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864098.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864108.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864121.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864138.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864169.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864179.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864190.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864201.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864212.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864243.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864250.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864260.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864269.sagnik-Inspiron-15-7569" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1512864277.sagnik-Inspiron-15-7569" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_net.py" afterPath="$PROJECT_DIR$/neural_net.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -223,10 +16,11 @@
       <file leaf-file-name="data_entry.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_entry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="235">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <marker date="1512877055852" expanded="true" signature="3287:3475" ph="..." />
               </folding>
             </state>
           </provider>
@@ -235,9 +29,11 @@
       <file leaf-file-name="decision_tree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/decision_tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="176">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <marker date="1512877055852" expanded="true" signature="1660:2505" ph="'''...'''" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,8 +41,8 @@
       <file leaf-file-name="neural_net.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neural_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="268">
+              <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -305,11 +101,6 @@
             <path>
               <item name="heart-disease-prediction" type="b2602c69:ProjectViewProjectNode" />
               <item name="heart-disease-prediction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heart-disease-prediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heart-disease-prediction" type="462c0819:PsiDirectoryNode" />
-              <item name=".ipynb_checkpoints" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="heart-disease-prediction" type="b2602c69:ProjectViewProjectNode" />
@@ -438,25 +229,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17855169" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17855169" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33869115" sideWeight="0.49714285" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.50285715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25235602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5675393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43874344" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33869115" sideWeight="0.49714285" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.50285715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25235602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5675393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17855169" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,12 +303,23 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/neural_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_entry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <marker date="1512877055852" expanded="true" signature="3287:3475" ph="..." />
           </folding>
         </state>
       </provider>
@@ -516,13 +331,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/read_data.py" />
     <entry file="file://$PROJECT_DIR$/neural_net.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -544,13 +353,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/read_data.py" />
     <entry file="file://$PROJECT_DIR$/decision_tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -575,20 +378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/neural_net.py" />
     <entry file="file://$PROJECT_DIR$/read_data.ipynb" />
-    <entry file="file://$PROJECT_DIR$/read_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new_cleveland_test_X.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/read_data.py" />
+    <entry file="file://$PROJECT_DIR$/new_cleveland_test_X.data" />
     <entry file="file://$PROJECT_DIR$/hungarian.data">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -621,7 +412,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generalized_linear_model.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <marker date="1512877055852" expanded="true" signature="1660:2505" ph="'''...'''" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleveland.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20034">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_entry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1512877055852" expanded="true" signature="3287:3475" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_entry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1512877055852" expanded="true" signature="3287:3475" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_data.py" />
+    <entry file="file://$PROJECT_DIR$/neural_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_data.py" />
+    <entry file="file://$PROJECT_DIR$/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_data.ipynb" />
+    <entry file="file://$PROJECT_DIR$/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/neural_net.py" />
+    <entry file="file://$PROJECT_DIR$/read_data.ipynb" />
+    <entry file="file://$PROJECT_DIR$/read_data.py" />
+    <entry file="file://$PROJECT_DIR$/new_cleveland_test_X.data" />
+    <entry file="file://$PROJECT_DIR$/hungarian.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/headernames.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/long-beach-va.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23868">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/229_processed_full.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -636,32 +573,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20034">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_entry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        <state relative-caret-position="235">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <marker date="1512877055852" expanded="true" signature="3287:3475" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/decision_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="176">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <marker date="1512877055852" expanded="true" signature="1660:2505" ph="'''...'''" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/neural_net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="268">
+          <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
