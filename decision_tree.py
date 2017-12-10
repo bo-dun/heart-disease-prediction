@@ -147,11 +147,11 @@ print('Accuracy: ' + str(accuracy/total))
 
 
 
-clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=70, criterion='entropy', max_depth=4, min_samples_leaf=12)
-clf.fit(x_train_dev[:,important[:max_i]], y_train_dev)
+predictor = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=70, criterion='entropy', max_depth=4, min_samples_leaf=12)
+predictor.fit(x_train_dev[:,important[:max_i]], y_train_dev)
 total = 0
 counter = 0
-prediction1 = clf.predict(x_test[:,important[:max_i]])
+prediction1 = predictor.predict(x_test[:,important[:max_i]])
 for j in range(len(prediction1)):
     total = total + 1
     if (y_test[j] == prediction1[j]):
