@@ -8,6 +8,7 @@ import numpy as np
 # X_train, X_test, Y_train, Y_test = split_data()
 
 kNum = len(x_dev_set)
+numFeatures = len(keys)
 max_total = 0
 max_i = -1
 feature_importances = 0
@@ -50,26 +51,61 @@ print('Best Estimator: ' + str(max_i))
 print('Average Predicted Correctly: ' + str(accuracy))
 print('Total: ' + str(total))
 print('Accuracy: ' + str(accuracy/total))
-important = feature_importances.argsort()[-55:][::-1]
+important = feature_importances.argsort()[-numFeatures:][::-1]
 print(keys[important])
-print(feature_importances)
+print(important)
+
+max_i = -1
+max_total = 0
+for i in range(1,numFeatures):
+    print(i)
+    
+    new_dev_x = []
+    new_dev_y = []
+    new_train_x = []
+    new_train_y = []
+    print(important[:i])
+    for j in range(kNum):
+        new_dev_x.append(x_dev_set[j][:,important[:i]])#np.delete(arr=x_dev_set[j], obj=important[:i], axis=1))
+        new_train_x.append(x_train_set[j][:,important[:i]])#np.delete(arr=x_train_set[j], obj=important[:i], axis=1))
+
+    set_total = 0
+    for set_num in range(kNum):
+        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=43, criterion='entropy', max_depth=4, min_samples_leaf=10)
+        clf.fit(new_train_x[set_num], y_train_set[set_num])
+
+        counter = 0
+        prediction1 = clf.predict(new_dev_x[set_num])
+        answer = y_dev_set[set_num]
+        for j in range(len(prediction1)):
+            if (answer[j] == prediction1[j]):
+                counter = counter + 1
+        set_total = set_total + counter
+
+    if (set_total > max_total):
+        max_i = i
+        max_total = set_total
+    print(set_total/kNum/total)
+total = len(x_dev_set[0])
+accuracy = max_total / kNum
+print("RANDOM FOREST STATS")
+print('Optimal Number of Features: ' + str(max_i))
+print('Average Predicted Correctly: ' + str(accuracy))
+print('Total: ' + str(total))
+print('Accuracy: ' + str(accuracy/total))
+
+
 
 clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=43, criterion='entropy', max_depth=4, min_samples_leaf=10)
-clf.fit(X, Y)
+clf.fit(X[:,important[:max_i]], Y)
 total = 0
 counter = 0
-prediction1 = clf.predict(x_test)
+prediction1 = clf.predict(x_test[:,important[:max_i]])
 for j in range(len(prediction1)):
     total = total + 1
     if (y_test[j] == prediction1[j]):
         counter = counter + 1
 print('Accuracy: ' + str(counter/total))
-important = clf.feature_importances_.argsort()[-55:][::-1]
-print(keys[important])
-print(clf.feature_importances_[important])
-
-
-
 
 
 
