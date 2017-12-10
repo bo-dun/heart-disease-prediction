@@ -117,7 +117,7 @@ for k in frame.keys():
         frame[k] = frame[k].map(lambda x: mean if x == -9 else 0)
         
 X = pd.DataFrame.as_matrix(frame)
-
+print(len(X))
 x_train_dev, x_test, y_train_dev, y_test = sk.train_test_split(X, Y, test_size = 0.2, random_state = 0, stratify=Y)
 kf = sk.StratifiedKFold(n_splits=5, random_state = 0, shuffle=True)
 y_train_dev = np.asarray(y_train_dev)

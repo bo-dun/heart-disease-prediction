@@ -3,6 +3,7 @@ from sklearn.model_selection import GridSearchCV
 from data_entry_peter import *
 from sklearn.metrics import confusion_matrix
 import numpy as np
+import matplotlib.pyplot as plt
 
 # STRATIFY BY DIABETICS
 # print(test_frame)
@@ -159,8 +160,10 @@ for j in range(len(prediction1)):
     else:
         print("Error: " + str(j))
 print('Accuracy: ' + str(counter/total))
-print(confusion_matrix(y_test, prediction1))
-print(prediction1)
+c_m = confusion_matrix(y_test, prediction1)
+print(c_m)
+plt.plot(c_m)
+plt.show()
 
 '''
 gradientTree = sklearn.ensemble.GradientBoostingClassifier(random_state=0)
