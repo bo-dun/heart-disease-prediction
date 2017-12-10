@@ -1,6 +1,6 @@
 import sklearn.ensemble
 from sklearn.model_selection import GridSearchCV
-from data_entry import *
+from data_entry_peter import *
 import numpy as np
 
 # STRATIFY BY DIABETICS
@@ -16,7 +16,7 @@ for i in ['entropy']:
     print(i)
     set_total = 0
     for set_num in range(kNum):
-        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=43, criterion='entropy', max_depth=4, min_samples_leaf=10)
+        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=73, criterion='entropy', max_depth=4, min_samples_leaf=12)
 # Performed iterative linear search for optimal hyperparameters
 #parameters = {
 #    'n_estimators': [50],#[94],
@@ -55,6 +55,8 @@ important = feature_importances.argsort()[-numFeatures:][::-1]
 print(keys[important])
 print(important)
 
+optimal_dev_x = []
+optimal_train_x = []
 max_i = -1
 max_total = 0
 for i in range(1,numFeatures):
@@ -71,7 +73,7 @@ for i in range(1,numFeatures):
 
     set_total = 0
     for set_num in range(kNum):
-        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=43, criterion='entropy', max_depth=4, min_samples_leaf=10)
+        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=73, criterion='entropy', max_depth=4, min_samples_leaf=12)
         clf.fit(new_train_x[set_num], y_train_set[set_num])
 
         counter = 0
@@ -85,8 +87,10 @@ for i in range(1,numFeatures):
     if (set_total > max_total):
         max_i = i
         max_total = set_total
+        optimal_dev_x = new_dev_x
+        optimal_train_x = new_train_x
     print(set_total/kNum/total)
-total = len(x_dev_set[0])
+
 accuracy = max_total / kNum
 print("RANDOM FOREST STATS")
 print('Optimal Number of Features: ' + str(max_i))
@@ -96,8 +100,54 @@ print('Accuracy: ' + str(accuracy/total))
 
 
 
-clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=43, criterion='entropy', max_depth=4, min_samples_leaf=10)
-clf.fit(X[:,important[:max_i]], Y)
+max_total = 0
+max_i2 = -1
+feature_importances = 0
+for i in range(1,21):
+    print(i)
+    set_total = 0
+    for set_num in range(kNum):
+        clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=70, criterion='entropy', max_depth=4, min_samples_leaf=12)
+# Performed iterative linear search for optimal hyperparameters
+#parameters = {
+#    'n_estimators': [50],#[94],
+#    'criterion': ['gini'],
+#    'max_depth': [11],
+#    'min_samples_leaf': [1],
+#    'max_features': ['sqrt']
+#}
+#clf = GridSearchCV(randomForest, parameters)
+        clf.fit(optimal_train_x[set_num], y_train_set[set_num])
+
+        counter = 0
+        prediction1 = clf.predict(optimal_dev_x[set_num])
+        answer = y_dev_set[set_num]
+        for j in range(len(prediction1)):
+            if (answer[j] == prediction1[j]):
+                counter = counter + 1
+        set_total = set_total + counter
+
+        feature_importances = feature_importances + clf.feature_importances_
+        #important = clf.feature_importances_.argsort()[-55:][::-1]
+        #print(keys[important])
+        #print(clf.feature_importances_[important])
+    if (set_total > max_total):
+        max_i2 = i
+        max_total = set_total
+
+total = len(x_dev_set[0])
+accuracy = max_total / kNum
+print("RANDOM FOREST STATS")
+print('Best Estimator: ' + str(max_i2))
+print('Average Predicted Correctly: ' + str(accuracy))
+print('Total: ' + str(total))
+print('Accuracy: ' + str(accuracy/total))
+
+
+
+
+clf = sklearn.ensemble.RandomForestClassifier(random_state=0, n_estimators=70, criterion='entropy', max_depth=4, min_samples_leaf=12)
+clf.fit(x_train_dev[:,important[:max_i]], y_train_dev)
 total = 0
 counter = 0
 prediction1 = clf.predict(x_test[:,important[:max_i]])
