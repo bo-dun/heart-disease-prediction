@@ -105,16 +105,6 @@ frame['sex_feature'] = sex_feature
 # convert to numbers
 frame = frame.applymap(float)
 
-# break down categorical variables
-flatten = lambda x: 1 if x else 0
-factors = ['cp', 'restecg', 'proto', 'slope', 'restwm', 'thal', 'dataset']
-
-for factor in factors:
-    if factor in frame:
-        for value in frame[factor].unique():
-            frame[factor + str(int(value))] = (frame[factor] == value).map(flatten)
-        del frame[factor]
-
 # impute -9 values
 problematic_cols = [k for k in frame.keys() if any(frame[k] == -9)]
 
