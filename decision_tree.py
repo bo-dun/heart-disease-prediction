@@ -57,6 +57,17 @@ important = feature_importances.argsort()[-numFeatures:][::-1]
 print(keys[important])
 print(important)
 
+
+plt.title('Estimated random forest feature importance')
+plt.xlabel('Coefficient')
+plt.yticks(range(10), list(reversed(keys[important[:10]])))
+sorted_features = feature_importances.copy()
+sorted_features.sort()
+print(sorted_features)
+plt.barh(range(10), sorted_features[-10:])
+plt.show()
+
+
 optimal_dev_x = []
 optimal_train_x = []
 max_i = -1
